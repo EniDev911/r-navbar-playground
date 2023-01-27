@@ -9,7 +9,7 @@ export function useAppContext(){
 
 
 const AppProvider = ({children}) => {
-    const [options, setOptions] = useState([{title:'home', path:'/'}, {title:'home', path:'about'}]);
+    const [options, setOptions] = useState([{title:'home', path:'/'}, {title:'about', path:'about'}]);
 
     return (
         <AppCtx.Provider value={{
