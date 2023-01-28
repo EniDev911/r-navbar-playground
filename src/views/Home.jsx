@@ -11,10 +11,9 @@ export default () => {
     setStyle({...style, [property]: e.target.value})
   }
 
-
-
   const handleOnclick = () => {
     setOptions([...options, option]);
+    setOption({path: '', title:''})
   }
 
   return (
@@ -25,8 +24,8 @@ export default () => {
       <div className="row mt-5 justify-content-between">
         <div className="col-12 col-sm-4">
           <label className="mb-1">Agregar opción</label>
-          <input className="form-control mb-1" placeholder="Titulo" onChange={(e) => handleOnchange(e, 'title')}/>
-          <input className="form-control" placeholder="Ruta" onChange={(e) => handleOnchange(e, 'path')}/>
+          <input className="form-control mb-1" value={option.title} placeholder="Titulo" onChange={(e) => handleOnchange(e, 'title')}/>
+          <input className="form-control" value={option.path} placeholder="Ruta" onChange={(e) => handleOnchange(e, 'path')}/>
           <button className="btn btn-dark mt-2" onClick={handleOnclick}>agregar</button>
         </div>
         <div className="col-12 col-sm-4 ">
