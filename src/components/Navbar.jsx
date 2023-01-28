@@ -4,14 +4,14 @@ import {NavLink} from 'react-router-dom'
 export default () => {
 
   const setActive = ({ isActive}) => (isActive ? "active": "") 
-  const {options} = useAppContext();
+  const {options, style} = useAppContext();
   return (
-    <nav>
+    <nav style={{background: style.background}}>
       <ul className='nav'>
       {options.map(opt => {
         return (
-          <li key={opt.title} className='nav-item ms-3 text-light'>
-            <NavLink to={opt.path} className={setActive}>
+          <li key={opt.title} className='nav-item ms-3'>
+            <NavLink to={opt.path} className={setActive} style={{color: style.color}}>
               {opt.title}
             </NavLink>
           </li>
