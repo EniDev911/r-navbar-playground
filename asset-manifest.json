@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/r-navbar-playground/static/css/main.febdee97.css",
+    "main.js": "/r-navbar-playground/static/js/main.407604d9.js",
+    "index.html": "/r-navbar-playground/index.html",
+    "main.febdee97.css.map": "/r-navbar-playground/static/css/main.febdee97.css.map",
+    "main.407604d9.js.map": "/r-navbar-playground/static/js/main.407604d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.febdee97.css",
+    "static/js/main.407604d9.js"
+  ]
+}
